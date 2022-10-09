@@ -60,10 +60,12 @@ getData();
 console.log(2);
 ```
 #### Output:
+```
 1
 2
 Hello World
- 
+```
+
 Notice that the console prints 2 before the **“Hello World”**. This is due to the usage of the await keyword. 
  
 Browser Support
