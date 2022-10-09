@@ -4,7 +4,7 @@ An async function is a function declared with the async keyword, and the await k
 async makes a function return a Promise
 await makes a function wait for a Promise
  
-## async function
+## Async function
 An async function is a function declared with the async keyword, and the await keyword is permitted within it. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
  
 ```javascript
@@ -23,7 +23,7 @@ statements
 }
 ```
 
-### Parameters
+#### Parameters
 **name**
 The function's name.
 **param** (Optional)
@@ -31,10 +31,10 @@ The name of an argument to be passed to the function.
 **statements** (Optional)
 The statements comprising the body of the function. The await mechanism may be used.
  
-### Return value
+#### Return value
 A **Promise** which will be resolved with the value returned by the async function, or rejected with an exception thrown from, or uncaught within, the async function.
  
-### Example
+#### Example
 ```javascript 
 const getData = async() => {
     var data = "Hello World";
@@ -43,12 +43,12 @@ const getData = async() => {
  
 getData().then(data => console.log(data));
 ```
-### Output:
+#### Output:
 Hello World
 
 ## Await: 
 Await function is used to wait for the promise. It could be used within the async block only. It makes the code wait until the promise returns a result. It only makes the async block wait.
-### Example:
+#### Example:
 ```javascript
 const getData = async() => {
     var y = await "Hello World";
@@ -59,7 +59,7 @@ console.log(1);
 getData();
 console.log(2);
 ```
-### Output:
+#### Output:
 1
 2
 Hello World
