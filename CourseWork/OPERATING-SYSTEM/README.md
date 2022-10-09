@@ -1,1 +1,131 @@
+<h1 align="center">ARCHITECTURE OF OPERATING SYSTEM:</h1>
+<br/>
+<h3 align="left">
+    Operating system architecture explains the overall design of system peripherals and software components.It also explains its operations and their effectiveness as a whole
+</h3>
+<br/>
+<p>
+    Architecture of a system comprises of various layers, where each layer has a specific well-defined task to perform
+</p>
+<p>
+    The layered architecture is broadly divided into 4 levels:
+</p>
+<ul>
+    <li>Level 1: Hardware</li>
+    <li>Level 2: Kernel</li>
+    <li>Level 3: Shell</li>
+    <li>Level 4: User Interface</li>
+</ul>
+<div>
+    <img src="architecture.jpg" alt="architecture">
+</div>
+<div>
+    <h3 align="Left">
+        Level 1- Hardware:
+    </h3>
+    <p>
+        The physical components present in the system such as: main memory(RAM), CPU and other computer peripherals involved to perform certain tasks, makes up the hardware section of the Operating system.
+    </p>
+</div>
+<br/>
+<div>
+    <h3 align="Left">
+        Level 2- Kernel:
+    </h3>
+    <ul>
+        <li>Kernel is an interface between Shell and Hardware.</li>
+        <li>Kernel mainly interacts with hardware components and it often referred as the heart of operating system or core part of OS.</li>
+        <b>Main task of Kernel:</b>
+        <br\>
+        <p>
+            <ul>
+                <li>Kernel receives commands from the shell (in machine level code) and it executes them with the help of system peripherals</li>
+                <li>While booting up the system, the system executes certain instructions (such as loading up the driver files of peripherals) which are available in Bootstrap program, which is present in Kernel. Kernel executes this bootstrap program and also other programs which are used while operating the system.</li>
+                <li>Kernel is also responsible for:
+                    <ul>
+                        <li>Process management</li>
+                        <li>Input/Output device management</li>
+                        <li>Memory management</li>
+                        <li>File Management etc</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </ul>
+</div>
+<div>
+    <h3 align="Left">
+        Level 3- Shell: (Also referred as Command Line Interpreter)
+    </h3>
+    <p>
+        Shell acts as an interface between application software/programs (user interface) and Kernel.
+    </p>
+    <b>The main task of the Shell is:</b>
+    <ul>
+        <li>Shell acts as a Command line interpreter, it understands and interpretes every line of each command received from the user.</li>
+        <li>Whenever we assign a command to the system, the Shell checks whether the command is valid or not (i.e correct or incorrect). If the command is incorrect, the Shell will notify the user.</li>
+        <li>If the command is valid, the shell converts the high level code into machine level codeand submits it to Kernel</li>
+        <li>Kernel executes the machine level code assigned by the shell with the help of system peripherals. The system peripherals will execute the following commands and return a response to the kernel. The resultant command is sent to shell (which is in machine level language) which converts the response to high level language and presents the response to user on user interface</li>
+    </ul>
+</div>
+<div>
+    <h3 align="Left">
+        Level 4- User Interface: 
+    </h3>
+    <p>
+        <ul>
+            <li>User interface is a place where all the applcation software performs it's operations</li>
+            <li>Here the user directly interacts with system via application software (example: MS Word, VLC Media player and other applications) i.e it (system) receives commands from the user via application software(s).</li>
+            <li>Here the user also receives messages from the OS regarding command execution status, errors etc.</li>
+        </ul>
+    </p>
+</div>
+
+<h1 align="center">
+    Difference between Shell and Kernel:
+</h1>
+<div>
+    <table style="border: 2px solid orange;">
+        <thead style="border: 2px solid orange;">
+            <tr style="border: 2px solid orange;">
+                <th>Shell</th>
+                <th>Kernel</th>
+            </tr>
+        </thead>
+        <tbody style="border: 2px solid orange;">
+            <tr style="border: 2px solid orange;">
+                <td>
+                    <b>General Definition:</b>
+                    Shell is an interface between application software and interface. It also acts as Command line Interpreter.
+                </td>
+                <td>
+                    <b>General Definition:</b>
+                    Kernel is an interface between hardware peripherals and shell, which executes the commands received from the shell.
+                </td>
+            </tr>
+            <tr style="border: 2px solid orange;">
+                <td>
+                    <b>The main task of the Shell is:</b>
+                    Shell acts as a dictionary of commands. It checks all the commands assigned to the system are valid or not. If the commands assigned to the system are valid, it converts the commands into machine level code and submit it to kernel.
+                </td>
+                <td>
+                    <b>The main task of the Kernel is:</b>
+                    It receives the command from the Shell and executes them with the help of system peripherals
+                </td>
+            </tr>
+            <tr style="border: 2px solid orange;">
+                <td>Shell forms the outer layer of operating system</td>
+                <td>Kernel is the core of the operating system</td>
+            </tr>
+            <tr style="border: 2px solid orange;">
+                <td>Shell is responsible for communication between user and system</td>
+                <td>Kernel performs all the tasks assigned by the user and also those tasks which are used to run the system</td>
+            </tr>
+            <tr style="border: 2px solid orange;">
+                <td>Shell interacts with user and it interprets the response from Kernel into a language which can be understandable by user</td>
+                <td>Kernel directly interacts with hardware. And Kernel can only understand machine level language</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
