@@ -46,7 +46,6 @@ function longRunningTask() {
 
 console.log(longRunningTask())
 // Result : Promise {<pending>}
-
 ```
 
 We can handle promises using asyncronous functions and the await keyword.
